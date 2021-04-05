@@ -1,0 +1,140 @@
+html{
+background-color: #2b2b28;
+height: 100%;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	/*grid-template-rows: 100px 70vh;*/
+	height: 100%;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	height: 90px;
+}
+
+.text{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	color: #f2edd7;
+	line-height: 23px;
+	height:75%;
+	justify-content: space-evenly;
+}
+
+@media screen and (min-width: 600px){
+	.text{
+		grid-template-rows: 20vw 25vw 30vw 30vw auto;
+	}
+}
+
+h2{
+	max-width: 60ch;
+	font-size: 18px;
+	color: #e65c5c;
+	margin:0 5px 20px 5px;
+}
+
+p{
+	max-width: 60ch;
+	font-size: 17px;
+	font-weight: 600;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.list{
+	padding: 0 16px 0 16px;
+	margin-top: 0;
+}
+
+li{
+	margin-top: 8px;
+}
+
+
+.social-networks{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-around;
+	width: 20rem;
+}
+
+.icon-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	background-color: #1b1717;
+	border-radius: 8px;
+}
+
+.icon-container:hover{
+	transition: all 0.4s ease 0s;
+	opacity: 0.87;
+}
+
+a{
+	display: flex;
+	justify-content: center;
+}
+
+.icon{
+	width: 29px;
+	height: 29px;
+}
+
+.instagram{
+	background-color: #f00075;
+}
+
+.facebook{
+	background-color: #3c64a6;
+}
+
+.whatsapp{
+	background-color: #25d366;
+}
+
+.VK{
+	background-color: #5082b9;
+}
+
+.website{
+	background-color: #e65c5c;
+}
+
+button{
+	transition: all 0.3s ease 0s;
+	border: none;
+	border-radius: 15px;
+	height: 43px;
+	width: 150px; 
+	background-color: #e65c5c;
+}
+
+button:hover{
+	background-color: #bb4848;
+	cursor: pointer;
+}
+
+body{
+	margin: 0;
+	height: inherit;
+}
+
