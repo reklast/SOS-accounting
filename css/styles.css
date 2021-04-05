@@ -1,16 +1,24 @@
 html{
 background-color: #2b2b28;
 height: 100%;
+background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .main{
 	display: flex;
 	flex-direction: column;
 	/*grid-template-rows: 100px 70vh;*/
-	height: 100%;
-	background-image: url(../images/bg.jpg);
-	background-size: cover;
-	background-position: center;	
+}
+
+@media screen and (min-height: 680px){
+	body{
+		height: 100%;
+	}
+	.main{
+		height: 100%;
+	}
 }
 
 header{
@@ -41,7 +49,7 @@ h2{
 	max-width: 60ch;
 	font-size: 18px;
 	color: #e65c5c;
-	margin:0 5px 20px 5px;
+	margin:0 5px 10px 5px;
 }
 
 p{
@@ -50,6 +58,7 @@ p{
 	font-weight: 600;
 	width: 100%;
 	margin-top: 8px;
+	margin-bottom: 10px;
 }
 
 .list{
@@ -65,7 +74,8 @@ li{
 .social-networks{
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 	
 }
 
@@ -136,6 +146,5 @@ button:hover{
 
 body{
 	margin: 0;
-	height: inherit;
 }
 
